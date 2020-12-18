@@ -161,3 +161,31 @@ body {
   font-family: 'IBM Plex Mono', monospace;
   font-weight: bold;
 }
+
+@media only screen and (max-width: 700px) {
+  body {
+    grid-template-columns: 1fr;
+  }
+  .menu, .grid-section, .copy {
+    grid-column: 1;
+  }
+  .grid-section {
+    grid-template-columns: 100px 1fr;
+    grid-gap: 10px;
+  }
+  .titulo {
+    font-size: 3rem;
+  }
+  .animais-lista {
+    grid-column: 1;
+  }
+  .faq-lista, .dados, .mapa {
+    grid-column: 1 / 3;
+  }
+  .menu {
+    margin-top: 0;
+  }
+  .copy {
+    margin-bottom: 0;
+  }
+}
