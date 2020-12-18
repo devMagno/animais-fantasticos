@@ -131,3 +131,33 @@ body {
   margin-bottom: .5rem;
   margin-left: 30px;
 }
+
+.mapa {
+  grid-column: 2;
+}
+.dados {
+  grid-column: 3;
+}
+.dados li {
+  margin-bottom: 1rem;
+  font-family: Helvetica, Arial, sans-serif;
+}
+.dados li::before {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 10px;
+  margin-right: 10px;
+  background: #FB5;
+}
+
+.copy {
+  grid-column: 3 / 5;
+  margin-bottom: 2rem;
+  background-color: #FB5;
+}
+.copy p {
+  padding: 20px;
+  font-family: 'IBM Plex Mono', monospace;
+  font-weight: bold;
+}
