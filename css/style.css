@@ -211,3 +211,29 @@ body {
     transform: translate3d(0, 0, 0);
   }
 }
+
+.js-accordion dt::after {
+  content: '▼';
+  margin-left: 10px;
+}
+.js-accordion dt.ativo::after {
+  content: '▲';
+}
+.js .js-accordion dd {
+  display: none;
+}
+.js .js-accordion dd.ativo {
+  display: block;
+  animation: slideDown .5s forwards;
+}
+
+@keyframes slideDown {
+  from {
+    max-height: 0;
+    opacity: 0;
+  }
+  to {
+    max-height: 200px;
+    opacity: 1;
+  }
+}
