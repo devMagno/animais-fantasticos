@@ -201,15 +201,11 @@ body {
   animation: show .5s forwards;
 }
 
-@keyframes show {
-  from {
-    opacity: 0;
-    transform: translate3d(-20px, 0, 0);
-  }
-  to {
-    opacity: 1;
-    transform: translate3d(0, 0, 0);
-  }
+.js .js-tabcontent section.ativo.show-down {
+  animation: show-down .5s forwards;
+}
+.js .js-tabcontent section.ativo.show-right {
+  animation: show .5s forwards;
 }
 
 .js-accordion dt::after {
@@ -227,16 +223,6 @@ body {
   animation: slideDown .5s forwards;
 }
 
-@keyframes slideDown {
-  from {
-    max-height: 0;
-    opacity: 0;
-  }
-  to {
-    max-height: 200px;
-    opacity: 1;
-  }
-}
 
 .js .js-scroll {
   opacity: 0;
@@ -246,4 +232,37 @@ body {
 .js .js-scroll.ativo {
   opacity: 1;
   transform: translate3d(0, 0, 0);
+}
+
+@keyframes show {
+  from {
+    opacity: 0;
+    transform: translate3d(-20px, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes show-down {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -20px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+
+@keyframes slideDown {
+  from {
+    max-height: 0;
+    opacity: 0;
+  }
+  to {
+    max-height: 200px;
+    opacity: 1;
+  }
 }

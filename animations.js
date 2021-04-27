@@ -9,7 +9,7 @@ function initTabNav() {
       tabContent.forEach((section) => {
         section.classList.remove(activeClass)
       })
-      tabContent[index].classList.add(activeClass)
+      tabContent[index].classList.add(activeClass, tabContent[index].dataset.anime)
     }
     tabMenu.forEach((itemMenu, index) => {
       itemMenu.addEventListener('click', () => activeTab(index))
