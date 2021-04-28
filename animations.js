@@ -1,7 +1,7 @@
 const activeClass = 'ativo'
 function initTabNav() {
-  const tabMenu = document.querySelectorAll('.js-tabmenu li')
-  const tabContent = document.querySelectorAll('.js-tabcontent section')
+  const tabMenu = document.querySelectorAll('[data-tab="menu"] li')
+  const tabContent = document.querySelectorAll('[data-tab="content"] section')
   if(tabMenu.length && tabContent.length) {
     tabContent[0].classList.add(activeClass)
 
@@ -20,7 +20,7 @@ function initTabNav() {
 initTabNav()
 
 function initAccordion() {
-  const accordionList = document.querySelectorAll('.js-accordion dt')
+  const accordionList = document.querySelectorAll('[data-anime="accordion"] dt')
   if (accordionList.length) {
     accordionList[0].classList.add(activeClass)
     accordionList[0].nextElementSibling.classList.add(activeClass)
@@ -37,7 +37,7 @@ function initAccordion() {
 initAccordion()
 
 function initSmoothScroll() {
-  const internalAnchors = document.querySelectorAll('.js-menu a[href^="#"]')
+  const internalAnchors = document.querySelectorAll('[data-menu="smooth"] a[href^="#"]')
   
   function scrollToSection(event) {
     event.preventDefault()
@@ -56,7 +56,7 @@ function initSmoothScroll() {
 initSmoothScroll()
 
 function initAnimateOnScroll() {
-  const sections = document.querySelectorAll('.js-scroll')
+  const sections = document.querySelectorAll('[data-anime="scroll"]')
   const halfScreen = window.innerHeight * 0.6
   function animateOnScroll() {
     sections.forEach((item) => {

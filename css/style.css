@@ -193,43 +193,43 @@ body {
   }
 }
 
-.js .js-tabcontent section {
+.js [data-tab="content"] section {
   display: none;
 }
-.js .js-tabcontent section.ativo {
+[data-tab="content"] section.ativo {
   display: block; 
   animation: show .5s forwards;
 }
 
-.js .js-tabcontent section.ativo.show-down {
+[data-tab="content"] section.ativo[data-anime="show-down"] {
   animation: show-down .5s forwards;
 }
-.js .js-tabcontent section.ativo.show-right {
+[data-tab="content"] section.ativo[data-anime="show-right"] {
   animation: show .5s forwards;
 }
 
-.js-accordion dt::after {
+[data-anime="accordion"] dt::after {
   content: '▼';
   margin-left: 10px;
 }
-.js-accordion dt.ativo::after {
+[data-anime="accordion"] dt.ativo::after {
   content: '▲';
 }
-.js .js-accordion dd {
+.js [data-anime="accordion"] dd {
   display: none;
 }
-.js .js-accordion dd.ativo {
+.js [data-anime="accordion"] dd.ativo {
   display: block;
   animation: slideDown .5s forwards;
 }
 
 
-.js .js-scroll {
+.js [data-anime="scroll"] {
   opacity: 0;
   transition: opacity .3s, transform .3s;
   transform: translate3d(-30px, 0, 0);
 }
-.js .js-scroll.ativo {
+.js [data-anime="scroll"].ativo {
   opacity: 1;
   transform: translate3d(0, 0, 0);
 }

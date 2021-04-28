@@ -12,7 +12,7 @@
 </head>
 <body>
 
-  <nav class="menu js-menu">
+  <nav class="menu" data-menu="smooth">
     <ul>
       <li><a href="#animais">Animais</a></li>
       <li><a href="#faq">FAQ</a></li>
@@ -21,9 +21,9 @@
     </ul>
   </nav>
 
-  <section class="grid-section animais js-scroll" id="animais">
+  <section class="grid-section animais" id="animais" data-anime="scroll">
     <h1 class="titulo">Animais Fantásticos</h1>
-    <ul class="animais-lista js-tabmenu">
+    <ul class="animais-lista" data-tab="menu">
       <li>
         <img src="img/img-1.jpg" alt="Raposa">
       </li>
@@ -43,7 +43,7 @@
         <img src="img/img-6.jpg" alt="Leão">
       </li>
     </ul>
-    <div class="animais-descricao js-tabcontent">
+    <div class="animais-descricao" data-tab="content">
       <section class="ativo" data-anime="show-down">
         <h2>Raposa</h2>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae velit saepe exercitationem, quod laudantium recusandae eum consectetur consequuntur optio dolore corporis mollitia magnam nam expedita.</p>
@@ -83,9 +83,9 @@
     </div>
   </section>
 
-  <section class="grid-section faq js-scroll" id="faq">
+  <section class="grid-section faq" id="faq" data-anime="scroll">
     <h1 class="titulo">FAQ</h1>
-    <dl class="faq-lista js-accordion">
+    <dl class="faq-lista" data-anime="accordion">
       <dt>Qual a idade dos animais?</dt>
       <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos ab, voluptates repudiandae doloribus dolorem accusantium!</dd>
       <dt>Eles são fantásticos?</dt>
@@ -97,7 +97,7 @@
     </dl>
   </section>
 
-  <section class="grid-section contato js-scroll" id="contato">
+  <section class="grid-section contato" id="contato" data-anime="scroll">
     <h1 class="titulo">Contato</h1>
     <div class="mapa">
       <img src="img/map.png" alt="Endereço: Rua Ali Perto, n° 15, São Vicente - SP">
