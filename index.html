@@ -11,108 +11,124 @@
   </script>
 </head>
 <body>
+  <div class="grid-container">
 
-  <nav class="menu" data-menu="smooth">
-    <ul>
-      <li><a href="#animais">Animais</a></li>
-      <li><a href="#faq">FAQ</a></li>
-      <li><a href="#contato">Contato</a></li>
-      <li><a href="https://github.com/devmagno">Dev →</a></li>
-    </ul>
-  </nav>
+    <nav class="menu" data-menu="smooth">
+      <ul>
+        <li><a href="#animais">Animais</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#contato">Contato</a></li>
+        <li><a data-modal="open" href="login.html">Login →</a></li>
+      </ul>
+    </nav>
 
-  <section class="grid-section animais" id="animais" data-anime="scroll">
-    <h1 class="titulo">Animais Fantásticos</h1>
-    <ul class="animais-lista" data-tab="menu">
-      <li>
-        <img src="img/img-1.jpg" alt="Raposa">
-      </li>
-      <li>
-        <img src="img/img-2.jpg" alt="Esquilo">
-      </li>
-      <li>
-        <img src="img/img-3.jpg" alt="Urso">
-      </li>
-      <li>
-        <img src="img/img-4.jpg" alt="Lobo">
-      </li>
-      <li>
-        <img src="img/img-5.jpg" alt="Macaco">
-      </li>
-      <li>
-        <img src="img/img-6.jpg" alt="Leão">
-      </li>
-    </ul>
-    <div class="animais-descricao" data-tab="content">
-      <section class="ativo" data-anime="show-down">
-        <h2>Raposa</h2>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae velit saepe exercitationem, quod laudantium recusandae eum consectetur consequuntur optio dolore corporis mollitia magnam nam expedita.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa dicta enim voluptatum optio distinctio aliquid!</p>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero maxime consequatur, dolores praesentium aperiam a.</p>
-      </section>
-      <section data-anime="show-right">
-        <h2>Esquilo</h2>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus, sit.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa dicta enim voluptatum optio distinctio aliquid!</p>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero maxime consequatur, dolores praesentium aperiam a.</p>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae velit saepe exercitationem, quod laudantium recusandae eum consectetur consequuntur optio dolore corporis mollitia magnam nam expedita.</p>
-      </section>
-      <section data-anime="show-right">
-        <h2>Urso</h2>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae velit saepe exercitationem, quod laudantium recusandae eum consectetur consequuntur optio dolore corporis mollitia magnam nam expedita.</p>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus, sit.</p>
-      </section>
-      <section data-anime="show-down">
-        <h2>Lobo</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa dicta enim voluptatum optio distinctio aliquid!</p>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae velit saepe exercitationem, quod laudantium recusandae eum consectetur consequuntur optio dolore corporis mollitia magnam nam expedita.</p>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero maxime consequatur, dolores praesentium aperiam a.</p>
-      </section>
-      <section>
-        <h2>Macaco</h2>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero maxime consequatur, dolores praesentium aperiam a.</p>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae velit saepe exercitationem, quod laudantium recusandae eum consectetur consequuntur optio dolore corporis mollitia magnam nam expedita.</p>
-      </section>
-      <section data-anime="show-right">
-        <h2>Leão</h2>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae velit saepe exercitationem, quod laudantium recusandae eum consectetur consequuntur optio dolore corporis mollitia magnam nam expedita.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa dicta enim voluptatum optio distinctio aliquid!</p>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus, sit.</p>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero maxime consequatur, dolores praesentium aperiam a.</p>
-      </section>
-    </div>
-  </section>
+    <section class="grid-section animais" id="animais" data-anime="scroll">
+      <h1 class="titulo">Animais Fantásticos</h1>
+      <ul class="animais-lista" data-tab="menu">
+        <li>
+          <img src="img/img-1.jpg" alt="Raposa">
+        </li>
+        <li>
+          <img src="img/img-2.jpg" alt="Esquilo">
+        </li>
+        <li>
+          <img src="img/img-3.jpg" alt="Urso">
+        </li>
+        <li>
+          <img src="img/img-4.jpg" alt="Lobo">
+        </li>
+        <li>
+          <img src="img/img-5.jpg" alt="Macaco">
+        </li>
+        <li>
+          <img src="img/img-6.jpg" alt="Leão">
+        </li>
+      </ul>
+      <div class="animais-descricao" data-tab="content">
+        <section class="ativo" data-anime="show-down">
+          <h2>Raposa</h2>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae velit saepe exercitationem, quod laudantium recusandae eum consectetur consequuntur optio dolore corporis mollitia magnam nam expedita.</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa dicta enim voluptatum optio distinctio aliquid!</p>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero maxime consequatur, dolores praesentium aperiam a.</p>
+        </section>
+        <section data-anime="show-right">
+          <h2>Esquilo</h2>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus, sit.</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa dicta enim voluptatum optio distinctio aliquid!</p>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero maxime consequatur, dolores praesentium aperiam a.</p>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae velit saepe exercitationem, quod laudantium recusandae eum consectetur consequuntur optio dolore corporis mollitia magnam nam expedita.</p>
+        </section>
+        <section data-anime="show-right">
+          <h2>Urso</h2>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae velit saepe exercitationem, quod laudantium recusandae eum consectetur consequuntur optio dolore corporis mollitia magnam nam expedita.</p>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus, sit.</p>
+        </section>
+        <section data-anime="show-down">
+          <h2>Lobo</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa dicta enim voluptatum optio distinctio aliquid!</p>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae velit saepe exercitationem, quod laudantium recusandae eum consectetur consequuntur optio dolore corporis mollitia magnam nam expedita.</p>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero maxime consequatur, dolores praesentium aperiam a.</p>
+        </section>
+        <section>
+          <h2>Macaco</h2>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero maxime consequatur, dolores praesentium aperiam a.</p>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae velit saepe exercitationem, quod laudantium recusandae eum consectetur consequuntur optio dolore corporis mollitia magnam nam expedita.</p>
+        </section>
+        <section data-anime="show-right">
+          <h2>Leão</h2>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae velit saepe exercitationem, quod laudantium recusandae eum consectetur consequuntur optio dolore corporis mollitia magnam nam expedita.</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa dicta enim voluptatum optio distinctio aliquid!</p>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus, sit.</p>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero maxime consequatur, dolores praesentium aperiam a.</p>
+        </section>
+      </div>
+    </section>
 
-  <section class="grid-section faq" id="faq" data-anime="scroll">
-    <h1 class="titulo">FAQ</h1>
-    <dl class="faq-lista" data-anime="accordion">
-      <dt>Qual a idade dos animais?</dt>
-      <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos ab, voluptates repudiandae doloribus dolorem accusantium!</dd>
-      <dt>Eles são fantásticos?</dt>
-      <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo dolore harum, rem labore eaque ea voluptate provident?</dd>
-      <dt>Qual a diferença?</dt>
-      <dd>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus fugiat molestiae rem facilis alias illo similique quisquam provident! Qui itaque voluptatibus dolorem exercitationem alias unde.</dd>
-      <dt>Como proteger?</dt>
-      <dd>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus, consectetur! Veritatis excepturi accusamus cum ipsam eligendi, earum voluptate doloremque aut. Soluta a cupiditate beatae excepturi.</dd>
-    </dl>
-  </section>
+    <section class="grid-section faq" id="faq" data-anime="scroll">
+      <h1 class="titulo">FAQ</h1>
+      <dl class="faq-lista" data-anime="accordion">
+        <dt>Qual a idade dos animais?</dt>
+        <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos ab, voluptates repudiandae doloribus dolorem accusantium!</dd>
+        <dt>Eles são fantásticos?</dt>
+        <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo dolore harum, rem labore eaque ea voluptate provident?</dd>
+        <dt>Qual a diferença?</dt>
+        <dd>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus fugiat molestiae rem facilis alias illo similique quisquam provident! Qui itaque voluptatibus dolorem exercitationem alias unde.</dd>
+        <dt>Como proteger?</dt>
+        <dd>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus, consectetur! Veritatis excepturi accusamus cum ipsam eligendi, earum voluptate doloremque aut. Soluta a cupiditate beatae excepturi.</dd>
+      </dl>
+    </section>
 
-  <section class="grid-section contato" id="contato" data-anime="scroll">
-    <h1 class="titulo">Contato</h1>
-    <div class="mapa">
-      <img src="img/map.png" alt="Endereço: Rua Ali Perto, n° 15, São Vicente - SP">
-    </div>
-    <ul class="dados">
-      <li>contato@exemplo.com</li>
-      <li>+55 (13) 99999-9999</li>
-      <li>Rua Ali Perto, n° 15</li>
-      <li>São Vicente - SP</li>
-    </ul>
-  </section>
+    <section class="grid-section contato" id="contato" data-anime="scroll">
+      <h1 class="titulo">Contato</h1>
+      <div class="mapa">
+        <img src="img/map.png" alt="Endereço: Rua Ali Perto, n° 15, São Vicente - SP">
+      </div>
+      <ul class="dados">
+        <li>contato@exemplo.com</li>
+        <li>+55 (13) 99999-9999</li>
+        <li>Rua Ali Perto, n° 15</li>
+        <li>São Vicente - SP</li>
+      </ul>
+    </section>
 
-  <footer class="copy">
-    <p>Todos os direitos reservados.</p>
-  </footer>
+    <footer class="copy">
+      <p>Todos os direitos reservados.</p>
+    </footer>
+
+    <section class="modal-container" data-modal="container">
+      <div class="modal">
+        <button data-modal="close" class="close">X</button>
+        <form action="">
+          <label for="email">E-mail</label>
+          <input type="text" for="email" id="email">
+          <label for="senha">Senha</label>
+          <input type="password" for="senha" id="senha">
+          <button type="submit">Entrar</button>
+        </form>
+      </div>
+    </section>
+
+  </div>
 
   <script type="module" src="js/script.js"></script>
 </body>

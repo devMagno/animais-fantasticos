@@ -16,6 +16,8 @@ body {
   background-color: #FAF6ED;
   color: #222;
   --webkit-font-smoothing: antialised;
+}
+.grid-container {
   display: grid;
   grid-template-columns: 1fr 120px minmax(300px, 800px) 1fr;
 }
@@ -166,7 +168,7 @@ body {
 }
 
 @media only screen and (max-width: 700px) {
-  body {
+  .grid-container {
     grid-template-columns: 1fr;
   }
   .menu, .grid-section, .copy {
