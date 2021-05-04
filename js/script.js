@@ -7,6 +7,7 @@ import initTooltip from "./modules/tooltip.js"
 import initDropdownMenu from "./modules/dropdown-menu.js"
 import initMobileMenu from "./modules/mobile-menu.js"
 import initAnimatedNumbers from "./modules/animated-numbers.js"
+import initOpeningHours from "./modules/opening-hours.js"
 
 initSmoothScroll()
 initAnimateOnScroll()
@@ -17,3 +18,4 @@ initTooltip()
 initDropdownMenu()
 initMobileMenu()
 initAnimatedNumbers()
+initOpeningHours()

@@ -156,6 +156,20 @@ body {
   background: #FB5;
 }
 
+[data-semana]::after {
+  display: inline-block;
+  content: '';
+  width: 6px;
+  height: 6px;
+  background-color: red;
+  border-radius: 50%;
+  margin-left: 4px;
+  border: 2px solid black;
+}
+[data-semana].aberto::after {
+  background-color: #3F4;
+}
+
 .copy {
   grid-column: 3 / 5;
   margin-bottom: 2rem;
