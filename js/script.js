@@ -8,6 +8,7 @@ import initDropdownMenu from "./modules/dropdown-menu.js"
 import initMobileMenu from "./modules/mobile-menu.js"
 import initOpeningHours from "./modules/opening-hours.js"
 import initFetchAnimals from "./modules/fetch-animals.js"
+import initFetchBitcoin from "./modules/fetch-bitcoin.js"
 
 initSmoothScroll()
 initAnimateOnScroll()
@@ -19,3 +20,4 @@ initDropdownMenu()
 initMobileMenu()
 initOpeningHours()
 initFetchAnimals()
+initFetchBitcoin()
