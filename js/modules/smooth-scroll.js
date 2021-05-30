@@ -7,7 +7,7 @@ export default function initSmoothScroll() {
     const section = document.querySelector(href)
     section.scrollIntoView({
       behavior: 'smooth',
-      block: 'start'
+      block: 'start',
     });
   }
   

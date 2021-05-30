@@ -10,7 +10,7 @@ export default function initOpeningHours() {
   const isOpenToday = weekDays.indexOf(dayOfTheWeek) !== -1
   const isOpenOnActualHour = actualHour >= weekHours[0] && actualHour < weekHours[1]
   
-  if(isOpenToday && isOpenOnActualHour) {
+  if (isOpenToday && isOpenOnActualHour) {
     openingHours.classList.add('aberto')
   }
 }
