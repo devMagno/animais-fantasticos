@@ -1,6 +1,8 @@
 export default function initSmoothScroll() {
-  const internalAnchors = document.querySelectorAll('[data-menu="smooth"] a[href^="#"]')
-  
+  const internalAnchors = document.querySelectorAll(
+    '[data-menu="smooth"] a[href^="#"]'
+  )
+
   function scrollToSection(event) {
     event.preventDefault()
     const href = event.currentTarget.getAttribute('href')
@@ -8,9 +10,9 @@ export default function initSmoothScroll() {
     section.scrollIntoView({
       behavior: 'smooth',
       block: 'start',
-    });
+    })
   }
-  
+
   internalAnchors.forEach((item) => {
     item.addEventListener('click', scrollToSection)
   })

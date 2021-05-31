@@ -13,7 +13,7 @@ export default function initFetchAnimals() {
   async function fetchAnimals(url) {
     try {
       const animalsResponse = await fetch(url)
-      const animalsJSON = await animalsResponse.json();
+      const animalsJSON = await animalsResponse.json()
       const numbersGrid = document.querySelector('.numeros-grid')
       animalsJSON.forEach((animal) => {
         const animalDiv = createAnimal(animal)
@@ -24,6 +24,6 @@ export default function initFetchAnimals() {
       console.log(Error(error))
     }
   }
-  
+
   fetchAnimals('./animalsAPI.json')
 }

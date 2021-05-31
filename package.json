@@ -4,7 +4,9 @@
   "description": "🦊 Site de demonstração de animais selvagens para estudo de JavaScript.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --mode production --entry ./js/script.js -o ./",
+    "dev": "webpack --mode development --watch --entry ./js/script.js -o ./"
   },
   "repository": {
     "type": "git",
@@ -19,6 +21,8 @@
   "devDependencies": {
     "eslint": "^7.27.0",
     "eslint-config-airbnb-base": "^14.2.1",
-    "eslint-plugin-import": "^2.23.4"
+    "eslint-plugin-import": "^2.23.4",
+    "webpack": "^5.38.1",
+    "webpack-cli": "^4.7.0"
   }
 }

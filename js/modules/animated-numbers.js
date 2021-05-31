@@ -1,11 +1,11 @@
 export default function initAnimatedNumbers() {
   function animateNumbers() {
     const numbers = document.querySelectorAll('[data-numero]')
-  
+
     numbers.forEach((number) => {
       const total = Number(number.innerText)
       const increment = Math.floor(total / 100)
-  
+
       let start = 0
       const timer = setInterval(() => {
         start += increment
@@ -18,7 +18,7 @@ export default function initAnimatedNumbers() {
     })
   }
 
-  let observer
+  let observer = new MutationObserver(handleMutation)
   const observeTarget = document.querySelector('.numeros')
   observer.observe(observeTarget, { attributes: true })
 
@@ -28,5 +28,4 @@ export default function initAnimatedNumbers() {
       animateNumbers()
     }
   }
-  observer = new MutationObserver(handleMutation)
 }
