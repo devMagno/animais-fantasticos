@@ -18,7 +18,7 @@ export default function initAnimatedNumbers() {
     })
   }
 
-  let observer = new MutationObserver(handleMutation)
+  const observer = new MutationObserver(handleMutation)
   const observeTarget = document.querySelector('.numeros')
   observer.observe(observeTarget, { attributes: true })
 
