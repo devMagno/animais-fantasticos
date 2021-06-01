@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack --mode production --entry ./js/script.js -o ./",
-    "dev": "webpack --mode development --watch --entry ./js/script.js -o ./"
+    "build": "webpack --mode production",
+    "dev": "webpack --mode development --watch"
   },
   "repository": {
     "type": "git",
@@ -19,10 +19,17 @@
   },
   "homepage": "https://github.com/devMagno/animais-fantasticos#readme",
   "devDependencies": {
+    "@babel/cli": "^7.14.3",
+    "@babel/core": "^7.14.3",
+    "@babel/preset-env": "^7.14.4",
     "eslint": "^7.27.0",
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-plugin-import": "^2.23.4",
     "webpack": "^5.38.1",
     "webpack-cli": "^4.7.0"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.12.1",
+    "whatwg-fetch": "^3.6.2"
   }
 }
