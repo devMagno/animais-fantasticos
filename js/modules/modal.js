@@ -3,7 +3,7 @@ export default class Modal {
     this.openButton = document.querySelector(openButton)
     this.closeButton = document.querySelector(closeButton)
     this.modalContainer = document.querySelector(modalContainer)
-  
+
     this.eventToggleModal = this.eventToggleModal.bind(this)
     this.clickOutsideOfModal = this.clickOutsideOfModal.bind(this)
   }
@@ -11,14 +11,14 @@ export default class Modal {
   toggleModal() {
     this.modalContainer.classList.toggle('ativo')
   }
-  
+
   eventToggleModal(event) {
     event.preventDefault()
     this.toggleModal()
   }
 
   clickOutsideOfModal(event) {
-    if(event.target === this.modalContainer) {
+    if (event.target === this.modalContainer) {
       this.toggleModal()
     }
   }
