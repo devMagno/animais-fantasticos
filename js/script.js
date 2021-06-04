@@ -7,7 +7,7 @@ import Tooltip from './modules/tooltip.js'
 import initDropdownMenu from './modules/dropdown-menu.js'
 import initMobileMenu from './modules/mobile-menu.js'
 import initOpeningHours from './modules/opening-hours.js'
-import initFetchAnimals from './modules/fetch-animals.js'
+import fetchAnimals from './modules/fetch-animals.js'
 import initFetchBitcoin from './modules/fetch-bitcoin.js'
 
 const smoothScroll = new SmoothScroll('[data-menu="smooth"] a[href^="#"')
@@ -32,5 +32,6 @@ initAnimateOnScroll()
 initDropdownMenu()
 initMobileMenu()
 initOpeningHours()
-initFetchAnimals()
 initFetchBitcoin()
+
+fetchAnimals('../../animalsAPI.json', '.numeros-grid')
