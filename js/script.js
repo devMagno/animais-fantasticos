@@ -1,5 +1,5 @@
 import SmoothScroll from './modules/smooth-scroll.js'
-import initAnimateOnScroll from './modules/animate-on-scroll.js'
+import AnimateOnScroll from './modules/animate-on-scroll.js'
 import Accordion from './modules/accordion.js'
 import TabNav from './modules/tab-nav.js'
 import Modal from './modules/modal.js'
@@ -22,13 +22,19 @@ const tabNav = new TabNav(
 )
 tabNav.init()
 
-const modal = new Modal('[data-modal="open"]', '[data-modal="close"]', '[data-modal="container"]')
+const modal = new Modal(
+  '[data-modal="open"]',
+  '[data-modal="close"]',
+  '[data-modal="container"]'
+)
 modal.init()
 
 const tooltip = new Tooltip('[data-tooltip]')
 tooltip.init()
 
-initAnimateOnScroll()
+const animateOnScroll = new AnimateOnScroll('[data-anime="scroll"]')
+animateOnScroll.init()
+
 initDropdownMenu()
 initMobileMenu()
 initOpeningHours()
