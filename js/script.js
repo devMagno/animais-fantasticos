@@ -4,7 +4,7 @@ import Accordion from './modules/accordion.js'
 import TabNav from './modules/tab-nav.js'
 import Modal from './modules/modal.js'
 import Tooltip from './modules/tooltip.js'
-import initDropdownMenu from './modules/dropdown-menu.js'
+import DropdownMenu from './modules/dropdown-menu.js'
 import initMobileMenu from './modules/mobile-menu.js'
 import initOpeningHours from './modules/opening-hours.js'
 import fetchAnimals from './modules/fetch-animals.js'
@@ -35,7 +35,9 @@ tooltip.init()
 const animateOnScroll = new AnimateOnScroll('[data-anime="scroll"]')
 animateOnScroll.init()
 
-initDropdownMenu()
+const dropdownMenu = new DropdownMenu('[data-dropdown]')
+dropdownMenu.init()
+
 initMobileMenu()
 initOpeningHours()
 
