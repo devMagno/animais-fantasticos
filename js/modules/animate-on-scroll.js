@@ -3,25 +3,39 @@ export default class AnimateOnScroll {
     this.sections = document.querySelectorAll(sections)
     this.halfScreen = window.innerHeight * 0.6
 
-    this.animateOnScroll = this.animateOnScroll.bind(this)
+    this.checkDistance = this.checkDistance.bind(this)
   }
 
-  animateOnScroll() {
-    this.sections.forEach((item) => {
-      const sectionTop = item.getBoundingClientRect().top
-      const isSectionVisible = sectionTop - this.halfScreen < 0
-      if (isSectionVisible) {
-        item.classList.add('ativo')
-      } else if (item.classList.contains('ativo')) {
-        item.classList.remove('ativo')
+  getDistance() {
+    this.distance = [...this.sections].map((section) => {
+      const { offsetTop } = section
+      return {
+        element: section,
+        offsetTop: Math.floor(offsetTop - this.halfScreen),
+      }
+    })
+  }
+
+  checkDistance() {
+    this.distance.forEach((section) => {
+      if (window.pageYOffset > section.offsetTop) {
+        section.element.classList.add('ativo')
+      } else if (section.element.classList.contains('ativo')) {
+        section.element.classList.remove('ativo')
       }
     })
   }
 
   init() {
     if (this.sections.length) {
-      this.animateOnScroll()
-      window.addEventListener('scroll', this.animateOnScroll)
+      this.getDistance()
+      this.checkDistance()
+      window.addEventListener('scroll', this.checkDistance)
     }
+    return this
+  }
+
+  stop() {
+    window.removeEventListener('scroll', this.checkDistance)
   }
 }
