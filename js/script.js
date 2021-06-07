@@ -6,7 +6,7 @@ import Modal from './modules/modal.js'
 import Tooltip from './modules/tooltip.js'
 import DropdownMenu from './modules/dropdown-menu.js'
 import MobileMenu from './modules/mobile-menu.js'
-import initOpeningHours from './modules/opening-hours.js'
+import OpeningHours from './modules/opening-hours.js'
 import fetchAnimals from './modules/fetch-animals.js'
 import fetchBitcoin from './modules/fetch-bitcoin.js'
 
@@ -41,7 +41,8 @@ dropdownMenu.init()
 const mobileMenu = new MobileMenu('[data-menu="button"]', '[data-menu="list"]')
 mobileMenu.init()
 
-initOpeningHours()
+const openingHours = new OpeningHours('[data-semana]', 'aberto')
+openingHours.init()
 
 fetchAnimals('../../animalsAPI.json', '.numeros-grid')
 fetchBitcoin('https://blockchain.info/ticker', 'span.btc-price')
