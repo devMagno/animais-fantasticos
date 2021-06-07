@@ -10,7 +10,7 @@ import OpeningHours from './modules/opening-hours.js'
 import fetchAnimals from './modules/fetch-animals.js'
 import fetchBitcoin from './modules/fetch-bitcoin.js'
 
-const smoothScroll = new SmoothScroll('[data-menu="smooth"] a[href^="#"')
+const smoothScroll = new SmoothScroll('[data-menu="smooth"] a[href^="#"]')
 smoothScroll.init()
 
 const accordion = new Accordion('[data-anime="accordion"] dt')
