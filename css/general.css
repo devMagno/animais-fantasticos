@@ -199,7 +199,7 @@ body {
     grid-gap: 10px;
   }
   .titulo {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
   .animais-lista {
     grid-column: 1;
@@ -231,11 +231,18 @@ body {
 }
 
 [data-anime="accordion"] dt::after {
-  content: '▼';
+  content: '';
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  background: url('../img/arrow-red.svg') no-repeat center center;
+  transform: rotate(90deg);
+  transition: transform .3s;
   margin-left: 10px;
 }
 [data-anime="accordion"] dt.ativo::after {
-  content: '▲';
+  content: '';
+  transform: rotate(-90deg);
 }
 .js [data-anime="accordion"] dd {
   display: none;
@@ -254,6 +261,13 @@ body {
 .js [data-anime="scroll"].ativo {
   opacity: 1;
   transform: translate3d(0, 0, 0);
+}
+
+.arrow-black {
+  display: inline-block;
+  background: url('../img/arrow-black.svg') no-repeat center center;
+  width: 8px;
+  height: 10px;
 }
 
 @keyframes show {
